@@ -1,10 +1,20 @@
 
 :root {
 
-    --body-bg : #121212;
-    --header-bg : #2c2c2c;
+    --body-bg : #000000;
+    --header-bg : #181717;
+
+    --card-bg : #181717;
+    --card-border : #181717;
+    --card-border-highlight : #1DA1F2;
+
+    --input-box-bg : #555454;
+    --input-box-highlight : #1DA1F2;
 
     --text-white-one : white;
+    --text-highlight : #1DA1F2;
+
+    --button-highlight-bg : #1DA1F2;
 
     --font-open-sans : 'Open Sans', sans-serif;
 
@@ -49,3 +59,73 @@
     -moz-box-shadow: -3px 7px 15px -2px rgba(0,0,0,0.75);
 }
 
+
+/* header component end */
+
+
+/* page header component start */
+
+.page_header_main
+{
+    width: 100%;
+    margin: 15px 0px;
+}
+.page_head_navigation
+{
+    font-size: .850rem;
+    color: var(--text-white-one);
+    font-family: var(--font-open-sans);
+    font-weight: 500;
+    transition: 0.4s all ease-in-out;
+}
+.page_head_navigation a
+{
+    outline: none;
+    text-decoration: none;
+    color: var(--text-white-one);
+    transition: 0.4s all ease-in-out;
+}
+.page_head_navigation:hover a
+{
+    color: var(--text-highlight) !important;
+}
+.arrow_icon
+{
+    margin-right: 7px;
+}
+.page_head_info
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.page_head_title
+{
+    color: var(--text-white-one);
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+    font-family: var(--font-open-sans);
+}
+.page_head_github_btn
+{
+    border: none;
+    padding: 10px 12px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    font-size: .950rem;
+    font-weight: 600;
+    font-family: var(--font-open-sans);
+    color: var(--text-white-one);
+    background-color: var(--button-highlight-bg);
+    transition: 0.4s all ease-in-out;
+}
+.page_head_github_btn:hover
+{
+    background-color: var(--button-highlight-bg);
+}
+
+
+/* page header component end */

@@ -1,0 +1,40 @@
+
+.otp_page_main
+{
+    margin: 35px 0px;
+}
+.otp_container
+{
+    margin: 55px 0px;
+    text-align: center;
+}
+.opt_heading
+{
+    color: var(--text-white-one);
+    font-size: .930rem;
+    font-weight: 400;
+    font-family: var(--font-open-sans);
+}
+.opt_box_container
+{
+    margin: 35px 0px;
+}
+.otp_input_box
+{
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    background-color: var(--input-box-bg);
+    border: 2px solid var(--input-box-bg);
+    font-family: var(--font-open-sans);
+    font-size: 1.2rem;
+    color: var(--text-white-one);
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+.otp_input_box:focus
+{
+    outline: none;
+    border: 2px solid var(--input-box-highlight);
+}

@@ -10,7 +10,7 @@ const Home = () => {
                 </div>
                 <div className='github-icon'>
                     <a href='https://github.com/SujithGunasekaran/React-Components' target='_blank' rel="noreferrer">
-                        <i class="fab fa-github"></i>
+                        <i className="fab fa-github"></i>
                     </a>
                 </div>
             </div>
