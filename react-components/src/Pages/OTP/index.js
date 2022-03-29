@@ -2,8 +2,6 @@ import React, { Fragment, useState, Suspense, lazy, useEffect, useRef } from 're
 import './style.css';
 
 const PageNavigation = lazy(() => import('../../Components/PageNavigation'));
-const PageHeader = lazy(() => import('../../Components/PageHeader'));
-
 
 const OTPPage = () => {
 
@@ -93,18 +91,15 @@ const OTPPage = () => {
     return (
         <Fragment>
             <Suspense fallback={<div>Loading...</div>}>
-                <PageNavigation />
+                <PageNavigation
+                    pageName='OTP Component'
+                    githubUrl='OTP'
+                />
             </Suspense>
             <div className='otp_page_main'>
                 <div className='container-fluid'>
                     <div className='row justify-content-md-center'>
                         <div className='col-md-5'>
-                            <Suspense fallback={<div>Loading...</div>}>
-                                <PageHeader
-                                    PageName='OTP Component'
-                                    githubUrl='OTP'
-                                />
-                            </Suspense>
                             <div className='otp_container'>
                                 <div className='opt_heading'>Enter OTP send to you to verify the identity</div>
                                 <div className='opt_box_container'>

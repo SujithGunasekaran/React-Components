@@ -1,20 +1,36 @@
 
 :root {
 
-    --body-bg : #000000;
-    --header-bg : #181717;
+    --body-bg : #1D2127;
+    --header-bg : #11161D;
 
-    --card-bg : #181717;
-    --card-border : #181717;
+    --card-light-bg : #343A40;
+    --card-bg : #11161D;
+    --card-border : #11161D;
     --card-border-highlight : #1DA1F2;
 
+    --input-box-border : #454444;
     --input-box-bg : #555454;
     --input-box-highlight : #1DA1F2;
 
     --text-white-one : white;
+    --text-white-two : rgb(165, 164, 164);
     --text-highlight : #1DA1F2;
 
+    --border-light : #11161D;
+
+    --button-danger-border : #dc3545;
+    --button-danger-text : #dc3545;
     --button-danger-bg : #dc3545;
+    --button-info-border : #17a2b8;
+    --button-info-text : #17a2b8;
+    --button-info-bg : #17a2b8;
+    --button-success-bg : #28a745;
+    --button-success-text : #28a745;
+    --button-success-border : #28a745;
+    --button-cancel-bg : #6c757d;
+    --button-cancel-text : #6c757d;
+    --button-cancel-border : #6c757d;
     --button-dark-one : #414141;
     --button-highlight-bg : #1DA1F2;
     --button-highlight-dark : rgb(29,161,242,0.3);
@@ -75,6 +91,13 @@
 }
 .page_head_navigation
 {
+    padding: 25px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 1px 3px 0 1px #2f3139;
+    justify-content: space-between;
+    background-color: var(--card-bg);
     font-size: .850rem;
     color: var(--text-white-one);
     font-family: var(--font-open-sans);
@@ -88,7 +111,7 @@
     color: var(--text-white-one);
     transition: 0.4s all ease-in-out;
 }
-.page_head_navigation:hover a
+.page_head_navigation a:hover
 {
     color: var(--text-highlight) !important;
 }
@@ -107,8 +130,9 @@
 .page_head_title
 {
     color: var(--text-white-one);
-    font-size: 1.8rem;
-    font-weight: 800;
+    font-size: 1.4rem;
+    font-weight: 500;
+    word-spacing: 2px;
     text-align: center;
     font-family: var(--font-open-sans);
 }
@@ -118,7 +142,7 @@
     padding: 10px 12px;
     background-color: var(--card-bg);
     border-radius: 8px;
-    font-size: .950rem;
+    font-size: .800rem;
     font-weight: 600;
     font-family: var(--font-open-sans);
     color: var(--text-white-one);

@@ -2,7 +2,10 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
 
-const PageNavigation = () => {
+const PageNavigation = (props) => {
+
+    // props
+    const { pageName, githubUrl } = props;
 
     return (
         <Fragment>
@@ -15,6 +18,12 @@ const PageNavigation = () => {
                                     <i className="fas fa-chevron-left arrow_icon"></i>
                                     Home
                                 </Link>
+                                <div className='page_head_info'>
+                                    <div className='page_head_title'>{pageName}</div>
+                                    <a href={`https://github.com/SujithGunasekaran/React-Components/tree/main/react-components/src/Pages/${githubUrl}`} target='_blank' rel="noreferrer">
+                                        <button className='page_head_github_btn'>Source Code</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -12,7 +12,7 @@ const Home = () => {
                     <div className='row'>
                         {
                             PageInfo.map((info) => (
-                                <div className='col-md-3 home_card'>
+                                <div className='col-md-3 home_card' key={info.id}>
                                     <Link to={info.url}>
                                         <div className='home_card_container'>
                                             <div className='home_card_text'>
