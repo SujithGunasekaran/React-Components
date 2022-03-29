@@ -17,7 +17,7 @@
 }
 .opt_box_container
 {
-    margin: 35px 0px;
+    margin: 20px 0px;
 }
 .otp_input_box
 {
@@ -38,3 +38,33 @@
     outline: none;
     border: 2px solid var(--input-box-highlight);
 }
+.otp_form_verify
+{
+    margin: 15px 0px 20px 0px;
+    color: var(--text-white-one);
+    font-size: .950rem;
+    font-weight: 500;
+    font-family: var(--font-open-sans);
+}
+.otp_form_footer
+{
+    margin: 25px 0px;
+}
+.otp_form_btn
+{
+    margin: 0px 10px;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 15px;
+    font-size: .950rem;
+    color: var(--text-white-one);
+    font-weight: 500;
+    font-family: var(--font-open-sans);
+    background-color: var(--button-dark-one);
+    transition: 0.4s all ease-in-out;
+}
+.otp_form_btn.cancel
+{
+    background-color: var(--button-danger-bg);
+}
+
