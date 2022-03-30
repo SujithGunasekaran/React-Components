@@ -15,12 +15,15 @@
 
     --text-white-one : white;
     --text-white-two : rgb(165, 164, 164);
+    --text-white-three : rgb(124, 124, 124);
+    --text-white-four : rgb(88, 88, 88);
+    --text-white-five : rgb(63, 62, 62);
     --text-highlight : #1DA1F2;
 
     --border-light : #11161D;
 
     --danger-color : #dc3545; 
-
+    --success-color : #28a745;
     --button-danger-border : #dc3545;
     --button-danger-text : #dc3545;
     --button-danger-bg : #dc3545;
@@ -58,7 +61,7 @@
 }
 .github-icon a
 {
-    color: var(--text-white-one);;
+    color: var(--text-white-one);
 }
 .overlay 
 {
@@ -79,6 +82,14 @@
     font-family: var(--font-open-sans);
     color: var(--danger-color);
 }
+.form_success
+{
+    text-align: left;
+    font-size: .790rem;
+    font-weight: 600;
+    font-family: var(--font-open-sans);
+    color: var(--success-color);
+}
 .sans_font
 {
     font-family: var(--font-open-sans);
@@ -90,6 +101,27 @@
 .text_950
 {
     font-size: .950rem;
+}
+.text_15 {
+    font-size: 1.5rem;
+}
+.text_16 {
+    font-size: 1.6rem;
+}
+.text_1 {
+    font-size: 1rem;
+}
+.text_11 {
+    font-size: 1.1rem;
+}
+.text_12 {
+    font-size: 1.2rem;
+}
+.text_13 {
+    font-size: 1.3rem;
+}
+.text_14 {
+    font-size: 1.4rem;
 }
 .text_white_one
 {

@@ -9,5 +9,10 @@ export const PageInfo = [
         id: 1,
         PageName: 'Contact List',
         url: '/contactList'
+    },
+    {
+        id: 2,
+        PageName: 'Signup',
+        url: '/signup'
     }
 ]

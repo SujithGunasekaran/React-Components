@@ -1,8 +1,9 @@
-import React from 'react';
+import { lazy } from 'react';
 
-const HomePage = React.lazy(() => import('../Pages/Home'));
-const OTPPage = React.lazy(() => import('../Pages/OTP'));
-const ContactListPage = React.lazy(() => import('../Pages/ContactList'));
+const HomePage = lazy(() => import('../Pages/Home'));
+const OTPPage = lazy(() => import('../Pages/OTP'));
+const ContactListPage = lazy(() => import('../Pages/ContactList'));
+const SignupPage = lazy(() => import('../Pages/Signup'));
 
 
 export const RouteInfo = [
@@ -20,6 +21,11 @@ export const RouteInfo = [
         id: 3,
         component: ContactListPage,
         path: '/contactList'
+    },
+    {
+        id: 4,
+        component: SignupPage,
+        path: '/signup'
     }
 ];
 
