@@ -4,11 +4,14 @@ import ContactItem from './ContactItem.js';
 
 const ContactHeader = lazy(() => import('./ContactHeader.js'));
 
+
 const Contact = () => {
 
     const {
         contactList,
-        setContactList
+        addContactInfo,
+        deleteContactInfo,
+        updateContactInfo
     } = useContactHooks();
 
     return (
@@ -19,7 +22,9 @@ const Contact = () => {
                         <div className='col-md-5'>
                             <div className='contact_card_container'>
                                 <Suspense fallback={<div>Loading...</div>}>
-                                    <ContactHeader />
+                                    <ContactHeader
+                                        addContactInfo={addContactInfo}
+                                    />
                                 </Suspense>
                                 {
                                     contactList.length > 0 &&
@@ -27,6 +32,8 @@ const Contact = () => {
                                         <Fragment key={contactInfo.id}>
                                             <ContactItem
                                                 contactInfo={contactInfo}
+                                                deleteContactInfo={deleteContactInfo}
+                                                updateContactInfo={updateContactInfo}
                                             />
                                         </Fragment>
                                     ))

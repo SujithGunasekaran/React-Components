@@ -139,3 +139,63 @@
     background-color: transparent;
     border: 1px solid var(--input-box-border);
 }
+.contact_page_popup
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    padding: 25px 20px;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: 1px 5px 20px -10px rgb(0 0 0 / 78%);
+    -webkit-box-shadow: 1px 5px 20px -10px rgb(0 0 0 / 78%);
+    -moz-box-shadow: 1px 5px 20px -10px rgb(0 0 0 / 78%);
+    transform: translate(-50%, -50%);
+    transition: 0.4s all ease-in-out;
+}
+.contact_page_popup_header
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.contact_page_popup_header .title
+{
+    font-size: 1rem;
+    color: var(--text-white-one);
+    font-weight: 500;
+    font-family: var(--font-open-sans);
+}
+.contact_page_popup_header .icon
+{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    color: var(--text-white-one);
+    transition: 0.4s all ease-in-out;
+}
+.contact_page_popup_header .icon:hover
+{
+    color: var(--text-highlight);
+}
+.contact_page_input.popup
+{
+    margin: 15px 0px;
+}
+.contact_page_popup_footer
+{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.contact_page_popup_btn
+{
+    border: none;
+    margin: 10px 0px;
+    background-color: var(--button-info-bg);
+    border-radius: 6px;
+    padding: 5px 15px;
+}
