@@ -61,6 +61,7 @@ const ContactPopup = (props) => {
                             <input
                                 type='text'
                                 name='Name'
+                                placeholder='Name'
                                 value={contactInfo?.Name ?? ''}
                                 onChange={(e) => handleInputChange(e)}
                                 className='contact_page_input popup sans_font text_950 text_white_one'
@@ -71,6 +72,7 @@ const ContactPopup = (props) => {
                             <input
                                 type='email'
                                 name='Email'
+                                placeholder='Email Address'
                                 value={contactInfo?.Email ?? ''}
                                 onChange={(e) => handleInputChange(e)}
                                 className='contact_page_input popup sans_font text_950 text_white_one'

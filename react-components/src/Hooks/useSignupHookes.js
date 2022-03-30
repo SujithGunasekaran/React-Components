@@ -19,6 +19,7 @@ const useSignupHooks = () => {
 
     const handlePasswordCheck = (value) => {
         let numberRegex = /\d/g;
+        // eslint-disable-next-line no-useless-escape
         let specialCharacterRegex = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
         setPasswordValidity(prevPassword => {
             let passwordValidity = { ...prevPassword };
