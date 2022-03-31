@@ -4,7 +4,7 @@ const HomePage = lazy(() => import('../Pages/Home'));
 const OTPPage = lazy(() => import('../Pages/OTP'));
 const ContactListPage = lazy(() => import('../Pages/ContactList'));
 const SignupPage = lazy(() => import('../Pages/Signup'));
-
+const DataTable = lazy(() => import('../Pages/DataTable'));
 
 export const RouteInfo = [
     {
@@ -26,6 +26,11 @@ export const RouteInfo = [
         id: 4,
         component: SignupPage,
         path: '/signup'
+    },
+    {
+        id: 5,
+        component: DataTable,
+        path: '/dataTable'
     }
 ];
 

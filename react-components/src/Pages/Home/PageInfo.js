@@ -14,5 +14,10 @@ export const PageInfo = [
         id: 2,
         PageName: 'Signup',
         url: '/signup'
+    },
+    {
+        id: 3,
+        PageName: 'Data Table',
+        url: "/dataTable"
     }
 ]

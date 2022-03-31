@@ -1,0 +1,75 @@
+.data_table_main {
+    margin: 25px 0px;
+}
+
+
+/* table header css start */
+
+.data_table_header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data_table_header_pagination_container {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    border-radius: 5px;
+    border: 1px solid var(--card-border-dark);
+}
+
+.data_table_header_pagination_icon {
+    padding: 2px 8px 5px 8px;
+    cursor: pointer;
+    border-right: 1px solid var(--card-border-dark);
+}
+
+.data_table_header_pagination_icon.disabled,
+.data_table_header_pagination_icon.disabled .icon {
+    cursor: none;
+    color: var(--text-white-five);
+    pointer-events: none;
+}
+
+.data_table_header_pagination_icon .icon {
+    color: var(--text-white-two);
+    width: 15px;
+    height: 15px;
+    transition: 0.4s all ease-in-out;
+}
+
+.data_table_header_pagination_icon:hover .icon {
+    color: var(--text-highlight);
+}
+
+.data_table_header_pagination_number {
+    padding: 5px 10px 5px 10px;
+    border-right: 1px solid var(--card-border-dark);
+    color: var(--text-white-two);
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+}
+
+.data_table_header_pagination_number.active {
+    color: var(--text-highlight);
+}
+
+
+.data_table_header_pagination_number:hover {
+    color: var(--text-highlight);
+}
+
+
+/* table header css end */
+
+
+/* table body css start */
+
+.data_table_container {
+    border-radius: 6px;
+    margin: 25px 0px;
+}
+
+
+/* table body css end */
