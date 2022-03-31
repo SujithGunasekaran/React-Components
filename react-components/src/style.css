@@ -1,70 +1,68 @@
-
 :root {
 
-    --body-bg : #1D2127;
-    --header-bg : #11161D;
+    --body-bg: #1A1A1A;
+    --header-bg: #282828;
 
-    --card-light-bg : #343A40;
-    --card-bg : #11161D;
-    --card-border : #11161D;
-    --card-border-highlight : #1DA1F2;
+    --card-light-bg: rgb(69, 69, 70);
+    --card-bg: #282828;
+    --card-border: #282828;
+    --card-border-highlight: #1DA1F2;
 
-    --input-box-border : #454444;
-    --input-box-bg : #555454;
-    --input-box-highlight : #1DA1F2;
+    --input-box-border: #454444;
+    --input-box-bg: #555454;
+    --input-box-highlight: #1DA1F2;
 
-    --text-white-one : white;
-    --text-white-two : rgb(165, 164, 164);
-    --text-white-three : rgb(124, 124, 124);
-    --text-white-four : rgb(88, 88, 88);
-    --text-white-five : rgb(63, 62, 62);
-    --text-highlight : #1DA1F2;
+    --text-white-one: white;
+    --text-white-two: rgb(165, 164, 164);
+    --text-white-three: rgb(124, 124, 124);
+    --text-white-four: rgb(88, 88, 88);
+    --text-white-five: rgb(63, 62, 62);
+    --text-highlight: #1DA1F2;
 
-    --border-light : #11161D;
+    --border-light: #11161D;
 
-    --danger-color : #dc3545; 
-    --success-color : #28a745;
-    --button-danger-border : #dc3545;
-    --button-danger-text : #dc3545;
-    --button-danger-bg : #dc3545;
-    --button-info-border : #17a2b8;
-    --button-info-text : #17a2b8;
-    --button-info-bg : #17a2b8;
-    --button-success-bg : #28a745;
-    --button-success-text : #28a745;
-    --button-success-border : #28a745;
-    --button-cancel-bg : #6c757d;
-    --button-cancel-text : #6c757d;
-    --button-cancel-border : #6c757d;
-    --button-dark-one : #414141;
-    --button-highlight-bg : #1DA1F2;
-    --button-highlight-dark : rgb(29,161,242,0.3);
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --button-danger-border: #dc3545;
+    --button-danger-text: #dc3545;
+    --button-danger-bg: #dc3545;
+    --button-info-border: #17a2b8;
+    --button-info-text: #17a2b8;
+    --button-info-bg: #17a2b8;
+    --button-success-bg: #28a745;
+    --button-success-text: #28a745;
+    --button-success-border: #28a745;
+    --button-cancel-bg: #6c757d;
+    --button-cancel-text: #6c757d;
+    --button-cancel-border: #6c757d;
+    --button-dark-one: #414141;
+    --button-highlight-bg: #1DA1F2;
+    --button-highlight-dark: rgb(29, 161, 242, 0.3);
 
-    --font-open-sans : 'Open Sans', sans-serif;
+    --font-open-sans: 'Open Sans', sans-serif;
 
 }
 
 /* Common css start */
 
-.body 
-{
+.body {
     background-color: var(--body-bg);
     width: 100%;
     min-height: 100vh;
     scroll-behavior: smooth;
     padding: 15px;
 }
-.github-icon
-{
+
+.github-icon {
     color: var(--text-white-one);
     font-size: 20px;
 }
-.github-icon a
-{
+
+.github-icon a {
     color: var(--text-white-one);
 }
-.overlay 
-{
+
+.overlay {
     position: fixed;
     top: 0px;
     left: 0;
@@ -74,57 +72,64 @@
     z-index: 120;
     transition: 0.5s all ease-in-out;
 }
-.form_error
-{
+
+.form_error {
     text-align: left;
     font-size: .790rem;
     font-weight: 600;
     font-family: var(--font-open-sans);
     color: var(--danger-color);
 }
-.form_success
-{
+
+.form_success {
     text-align: left;
     font-size: .790rem;
     font-weight: 600;
     font-family: var(--font-open-sans);
     color: var(--success-color);
 }
-.sans_font
-{
+
+.sans_font {
     font-family: var(--font-open-sans);
 }
-.text_9
-{
+
+.text_9 {
     font-size: .9rem;
 }
-.text_950
-{
+
+.text_950 {
     font-size: .950rem;
 }
+
 .text_15 {
     font-size: 1.5rem;
 }
+
 .text_16 {
     font-size: 1.6rem;
 }
+
 .text_1 {
     font-size: 1rem;
 }
+
 .text_11 {
     font-size: 1.1rem;
 }
+
 .text_12 {
     font-size: 1.2rem;
 }
+
 .text_13 {
     font-size: 1.3rem;
 }
+
 .text_14 {
     font-size: 1.4rem;
 }
-.text_white_one
-{
+
+.text_white_one {
     color: var(--text-white-one);
 }
 
@@ -132,8 +137,7 @@
 
 /* header component starts */
 
-.header-main
-{
+.header-main {
     background-color: var(--header-bg);
     padding: 20px 25px;
     color: var(--text-white-one);
@@ -143,9 +147,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: -3px 7px 15px -2px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -3px 7px 15px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: -3px 7px 15px -2px rgba(0,0,0,0.75);
+    box-shadow: -3px 7px 15px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -3px 7px 15px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -3px 7px 15px -2px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -154,73 +158,69 @@
 
 /* page header component start */
 
-.page_header_main
-{
+.page_header_main {
     width: 100%;
     margin: 15px 0px;
 }
-.page_head_navigation
-{
-    padding: 25px 15px;
+
+.page_head_navigation {
+    padding: 25px 0px;
     display: flex;
     align-items: center;
     border-radius: 6px;
-    box-shadow: 1px 3px 0 1px #2f3139;
     justify-content: space-between;
-    background-color: var(--card-bg);
     font-size: .850rem;
     color: var(--text-white-one);
     font-family: var(--font-open-sans);
     font-weight: 500;
     transition: 0.4s all ease-in-out;
 }
-.page_head_navigation a
-{
+
+.page_head_navigation a {
     outline: none;
     text-decoration: none;
-    color: var(--text-white-one);
+    color: var(--text-white-two);
     transition: 0.4s all ease-in-out;
 }
-.page_head_navigation a:hover
-{
+
+.page_head_navigation a:hover {
     color: var(--text-highlight) !important;
 }
-.arrow_icon
-{
+
+.arrow_icon {
     margin-right: 7px;
 }
-.page_head_info
-{
+
+.page_head_info {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
-.page_head_title
-{
-    color: var(--text-white-one);
+
+.page_head_title {
+    color: var(--text-white-two);
     font-size: 1.4rem;
-    font-weight: 500;
-    word-spacing: 2px;
+    font-weight: 700;
     text-align: center;
     font-family: var(--font-open-sans);
 }
-.page_head_github_btn
-{
+
+.page_head_github_btn {
     border: none;
     padding: 10px 12px;
     background-color: var(--card-bg);
-    border-radius: 8px;
-    font-size: .800rem;
-    font-weight: 600;
+    border-radius: 5px;
+    font-size: .820rem;
+    font-weight: 700;
     font-family: var(--font-open-sans);
     color: var(--text-white-one);
-    background-color: var(--button-highlight-dark);
+    background-color: var(--button-cancel-bg);
     transition: 0.4s all ease-in-out;
 }
-.page_head_github_btn:hover
-{
+
+.page_head_github_btn:hover {
     background-color: var(--button-highlight-bg);
 }
 
