@@ -1,11 +1,12 @@
 import React, { Fragment, useEffect, useMemo, useState, useRef } from 'react';
 import { DoubleLeftArrow, DoubleRightArrow, LeftArrow, RightArrow } from '../../UI/Icon';
+import useDebounceHooks from '../../Hooks/useDebounceHooks';
 
 
 const TableHeader = (props) => {
 
     // Props
-    const { totalLength, itemPerPage, handleNextPage } = props;
+    const { totalLength, itemPerPage, handleNextPage, handleSearchData } = props;
 
     // State
     const [totalPageNumber, setTotalPageNumber] = useState(0);
@@ -13,6 +14,9 @@ const TableHeader = (props) => {
     const [currentPageNumber, setCurrentPageNumber] = useState(1);
     const [currentSelectedPage, setCurrentSelectedPage] = useState(1);
     const [numberPerPage] = useState(10);
+
+    // Hooks
+    const { debounceCallBack } = useDebounceHooks(handleSearchData, 400);
 
     // Ref
     const handlePageNumberClick = useRef();
@@ -103,6 +107,14 @@ const TableHeader = (props) => {
                             cssClass={'icon'}
                         />
                     </div>
+                </div>
+                <div className='data_table_header_pagination_search'>
+                    <input
+                        type='text'
+                        placeholder='Search Email'
+                        className='data_table_header_search_input'
+                        onChange={(e) => debounceCallBack.call(e)}
+                    />
                 </div>
             </div>
         </Fragment>

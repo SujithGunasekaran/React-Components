@@ -1,4 +1,4 @@
-import React, { Fragment, Suspense, lazy, useState, useEffect, useRef, useMemo } from 'react';
+import React, { Fragment, Suspense, lazy, useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import axios from 'axios';
 import './style.css';
 
@@ -12,6 +12,7 @@ const DataTable = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemPerPage] = useState(20);
     const [totalLength, setTotalLength] = useState(0);
+    const [searchedData, setSearchedData] = useState('');
 
     // ref
     const getCommentDataRef = useRef();
@@ -45,6 +46,10 @@ const DataTable = () => {
         setCurrentPage(pageNumber);
     }
 
+    const handleSearchData = useCallback((input) => {
+        setSearchedData(input);
+    }, [])
+
     const headerData = useMemo(() => {
         const header = [];
         for (let i = 0; i < tableHeaderRef.current.length; i++) {
@@ -58,8 +63,17 @@ const DataTable = () => {
 
 
     const commentsData = useMemo(() => {
-        return commentsList.slice((currentPage - 1) * itemPerPage, ((currentPage - 1) * itemPerPage) + itemPerPage);
-    }, [commentsList, itemPerPage, currentPage])
+        let comments = [];
+        if (searchedData) {
+            comments = commentsList.filter((info) => info.email.includes(searchedData));
+            setTotalLength(comments.length);
+        }
+        else {
+            comments = commentsList;
+        }
+        setTotalLength(comments.length);
+        return comments.slice((currentPage - 1) * itemPerPage, ((currentPage - 1) * itemPerPage) + itemPerPage);
+    }, [commentsList, itemPerPage, currentPage, searchedData])
 
 
     return (
@@ -79,6 +93,7 @@ const DataTable = () => {
                                     totalLength={totalLength}
                                     itemPerPage={itemPerPage}
                                     handleNextPage={handleNextPage}
+                                    handleSearchData={handleSearchData}
                                 />
                             </Suspense>
                             <table className="table table-striped table-dark data_table_container">
