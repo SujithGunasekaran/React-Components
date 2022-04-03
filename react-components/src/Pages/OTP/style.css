@@ -23,7 +23,7 @@
     border-radius: 6px;
     text-align: center;
     background-color: var(--input-box-bg);
-    border: 2px solid var(--input-box-bg);
+    border: 1px solid var(--input-box-border);
     font-family: var(--font-open-sans);
     font-size: 1.2rem;
     color: var(--text-white-one);

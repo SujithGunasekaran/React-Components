@@ -1,43 +1,43 @@
 :root {
 
-    --body-bg: #1A1A1A;
-    --header-bg: #282828;
+    --body-bg: #0D1117;
+    --header-bg: #0D1117;
 
-    --card-light-bg: rgb(69, 69, 70);
-    --card-bg: #282828;
-    --card-border: #282828;
-    --card-border-highlight: #1DA1F2;
+    --card-light-bg: #0D1117;
+    --card-bg: #161B22;
+    --card-border: #30363d;
+    --card-border-highlight: #1F6FEB;
     --card-border-dark: #454444;
 
-    --input-box-border: #454444;
-    --input-box-bg: #555454;
-    --input-box-highlight: #1DA1F2;
+    --input-box-border: #30363d;
+    --input-box-bg: #161B22;
+    --input-box-highlight: #1F6FEB;
 
     --text-white-one: white;
     --text-white-two: rgb(165, 164, 164);
     --text-white-three: rgb(124, 124, 124);
     --text-white-four: rgb(88, 88, 88);
     --text-white-five: rgb(63, 62, 62);
-    --text-highlight: #1DA1F2;
+    --text-highlight: #1F6FEB;
 
-    --border-light: #11161D;
+    --border-light: #30363d;
 
     --danger-color: #dc3545;
     --success-color: #28a745;
     --button-danger-border: #dc3545;
     --button-danger-text: #dc3545;
     --button-danger-bg: #dc3545;
-    --button-info-border: #17a2b8;
-    --button-info-text: #17a2b8;
-    --button-info-bg: #17a2b8;
+    --button-info-border: #1F6FEB;
+    --button-info-text: #1F6FEB;
+    --button-info-bg: #1F6FEB;
     --button-success-bg: #28a745;
     --button-success-text: #28a745;
     --button-success-border: #28a745;
-    --button-cancel-bg: #6c757d;
+    --button-cancel-bg: #393e42;
     --button-cancel-text: #6c757d;
     --button-cancel-border: #6c757d;
     --button-dark-one: #414141;
-    --button-highlight-bg: #1DA1F2;
+    --button-highlight-bg: #1F6FEB;
     --button-highlight-dark: rgb(29, 161, 242, 0.3);
 
     --font-open-sans: 'Open Sans', sans-serif;
@@ -148,6 +148,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #30363d;
     box-shadow: -3px 7px 15px -2px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -3px 7px 15px -2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -3px 7px 15px -2px rgba(0, 0, 0, 0.75);
@@ -202,7 +203,7 @@
 
 .page_head_title {
     color: var(--text-white-two);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 700;
     text-align: center;
     font-family: var(--font-open-sans);
@@ -211,7 +212,6 @@
 .page_head_github_btn {
     border: none;
     padding: 10px 12px;
-    background-color: var(--card-bg);
     border-radius: 5px;
     font-size: .820rem;
     font-weight: 700;

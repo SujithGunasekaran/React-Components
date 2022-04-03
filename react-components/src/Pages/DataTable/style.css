@@ -75,30 +75,10 @@
     font-weight: 500;
     outline: none;
     color: var(--text-white-one);
-    border-radius: 6px 0px 0px 6px;
+    border-radius: 6px;
     border: 1px solid var(--card-border-dark);
 }
 
-.data_table_header_search_btn {
-    padding: 0px 15px;
-    height: 37px;
-    border: none;
-    outline: none;
-    background-color: var(--card-bg);
-    border-radius: 0px 6px 6px 0px;
-}
-
-.data_table_header_search_btn .icon {
-    margin-top: -2px;
-    width: 17px;
-    height: 17px;
-    color: var(--text-white-two);
-    transition: 0.4s all ease-in-out;
-}
-
-.data_table_header_search_btn:hover .icon {
-    color: var(--text-highlight);
-}
 
 /* table header css end */
 
