@@ -28,8 +28,6 @@ const InfiniteScroll = () => {
     }, [getContactList])
 
 
-    //https://api.github.com/search/users?q=dcoder&page=${page}&per_page=${ITEMS_PER_PAGE}
-
 
     return (
         <Fragment>
