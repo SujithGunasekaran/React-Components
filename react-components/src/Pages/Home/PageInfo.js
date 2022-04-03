@@ -19,5 +19,10 @@ export const PageInfo = [
         id: 3,
         PageName: 'Data Table',
         url: "/dataTable"
+    },
+    {
+        id: 4,
+        PageName: 'Infinite Scroll',
+        url: '/infiniteScroll'
     }
 ]

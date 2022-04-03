@@ -5,6 +5,7 @@ const OTPPage = lazy(() => import('../Pages/OTP'));
 const ContactListPage = lazy(() => import('../Pages/ContactList'));
 const SignupPage = lazy(() => import('../Pages/Signup'));
 const DataTable = lazy(() => import('../Pages/DataTable'));
+const InfiniteScroll = lazy(() => import('../Pages/InfiniteScroll'));
 
 export const RouteInfo = [
     {
@@ -31,6 +32,11 @@ export const RouteInfo = [
         id: 5,
         component: DataTable,
         path: '/dataTable'
+    },
+    {
+        id: 6,
+        component: InfiniteScroll,
+        path: '/infiniteScroll'
     }
 ];
 

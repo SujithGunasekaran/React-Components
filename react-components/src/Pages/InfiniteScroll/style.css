@@ -1,0 +1,25 @@
+.infinite_page_main {
+    margin: 45px 0px;
+    text-align: center;
+}
+
+.infinite_card_container {
+    border-radius: 6px;
+    border: 1px solid var(--border-light);
+}
+
+.infinite_card_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+    border-radius: 6px 6px 0px 0px;
+    background-color: var(--card-light-bg);
+}
+
+.infinite_card_header_title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: var(--font-open-sans);
+    color: var(--text-white-one);
+}

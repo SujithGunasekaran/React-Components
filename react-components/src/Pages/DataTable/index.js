@@ -65,7 +65,7 @@ const DataTable = () => {
     const commentsData = useMemo(() => {
         let comments = [];
         if (searchedData) {
-            comments = commentsList.filter((info) => info.email.includes(searchedData));
+            comments = commentsList.filter((info) => info.email.toLowerCase().includes(searchedData.toLowerCase()));
             setTotalLength(comments.length);
         }
         else {

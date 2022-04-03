@@ -227,3 +227,10 @@
 
 
 /* page header component end */
+
+
+@media (max-width : 750px) {
+    .body {
+        padding: 15px 0px;
+    }
+}

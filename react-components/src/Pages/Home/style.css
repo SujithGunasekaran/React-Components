@@ -2,6 +2,10 @@
     margin: 20px 0px;
 }
 
+.home_card {
+    margin-bottom: 25px;
+}
+
 .home_main a {
     outline: none;
     text-decoration: none;
