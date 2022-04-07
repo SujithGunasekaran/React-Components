@@ -6,6 +6,7 @@ const ContactListPage = lazy(() => import('../Pages/ContactList'));
 const SignupPage = lazy(() => import('../Pages/Signup'));
 const DataTable = lazy(() => import('../Pages/DataTable'));
 const InfiniteScroll = lazy(() => import('../Pages/InfiniteScroll'));
+const Search = lazy(() => import('../Pages/Search'));
 
 export const RouteInfo = [
     {
@@ -37,6 +38,11 @@ export const RouteInfo = [
         id: 6,
         component: InfiniteScroll,
         path: '/infiniteScroll'
+    },
+    {
+        id: 7,
+        component: Search,
+        path: '/search'
     }
 ];
 

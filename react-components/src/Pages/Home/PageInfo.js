@@ -24,5 +24,10 @@ export const PageInfo = [
         id: 4,
         PageName: 'Infinite Scroll',
         url: '/infiniteScroll'
+    },
+    {
+        id: 5,
+        PageName: 'Search',
+        url: '/search'
     }
 ]
