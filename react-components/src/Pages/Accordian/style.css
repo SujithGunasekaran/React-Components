@@ -1,0 +1,50 @@
+.accordian_container {
+    margin: 45px 0px;
+    text-align: center;
+}
+
+.accordian_item_container {
+    border-radius: 6px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
+}
+
+.accordian_item_head_container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.accordian_item_head_text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-white-one);
+    font-family: var(--font-open-sans);
+}
+
+.accordian_item_head_icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    color: var(--text-white-one);
+    transition: 0.4s all ease-in-out;
+}
+
+.accordian_item_head_icon:hover {
+    color: var(--text-highlight);
+}
+
+.accordian_item_para {
+    display: none;
+    transition: 0.4s all ease-in-out;
+}
+
+.accordian_item_para.active {
+    padding: 15px 15px;
+    text-align: left;
+    font-size: .950rem;
+    color: var(--text-white-two);
+    font-family: var(--font-open-sans);
+    display: block;
+}

@@ -85,3 +85,22 @@ export const PrimaryLoading = ({ cssClass }) => (
         <span className="sr-only">Loading...</span>
     </div>
 )
+
+export const AddIcon = ({ cssClass }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className={`bi bi-plus-lg ${cssClass}`} viewBox="0 0 16 16">
+        <path fillRule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+    </svg>
+)
+
+
+export const DownArrowIcon = ({ cssClass }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className={`bi bi-chevron-down ${cssClass}`} viewBox="0 0 16 16">
+        <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+    </svg>
+)
+
+export const UpArrowIcon = ({ cssClass }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className={`bi bi-chevron-up ${cssClass}`} viewBox="0 0 16 16">
+        <path fillRule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+    </svg>
+)

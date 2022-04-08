@@ -29,5 +29,10 @@ export const PageInfo = [
         id: 5,
         PageName: 'Search',
         url: '/search'
+    },
+    {
+        id: 6,
+        PageName: 'Accordian',
+        url: '/accordian'
     }
 ]

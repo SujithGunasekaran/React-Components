@@ -7,6 +7,7 @@ const SignupPage = lazy(() => import('../Pages/Signup'));
 const DataTable = lazy(() => import('../Pages/DataTable'));
 const InfiniteScroll = lazy(() => import('../Pages/InfiniteScroll'));
 const Search = lazy(() => import('../Pages/Search'));
+const Accordian = lazy(() => import('../Pages/Accordian'));
 
 export const RouteInfo = [
     {
@@ -43,6 +44,11 @@ export const RouteInfo = [
         id: 7,
         component: Search,
         path: '/search'
+    },
+    {
+        id: 8,
+        component: Accordian,
+        path: '/accordian'
     }
 ];
 
