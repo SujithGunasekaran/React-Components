@@ -1,8 +1,8 @@
 import React, { Fragment, lazy, Suspense } from 'react';
-import AccordianItem from '../../Components/Accordian/AccordianItem';
 import './style.css';
 
 const PageNavigation = lazy(() => import('../../Components/PageNavigation'));
+const AccordianComponent = lazy(() => import('../../Components/Accordian'));
 
 const Accordian = () => {
 
@@ -36,15 +36,15 @@ const Accordian = () => {
                 <div className='container-fluid'>
                     <div className='row justify-content-md-center'>
                         <div className='col-md-5'>
-                            {
-                                accordianList.map((accordianInfo) => (
-                                    <div key={accordianInfo.id}>
-                                        <AccordianItem
-                                            accordianInfo={accordianInfo}
-                                        />
-                                    </div>
-                                ))
-                            }
+                            <div className='accordian_title'>Single Option Accordian</div>
+                            <AccordianComponent
+                                accordianList={accordianList}
+                                single={true}
+                            />
+                            <div className='accordian_title'>Multiple Option Accordian</div>
+                            <AccordianComponent
+                                accordianList={accordianList}
+                            />
                         </div>
                     </div>
                 </div>
