@@ -34,5 +34,10 @@ export const PageInfo = [
         id: 6,
         PageName: 'Accordian',
         url: '/accordian'
+    },
+    {
+        id: 7,
+        PageName: 'Star Rating',
+        url: '/rating'
     }
 ]
