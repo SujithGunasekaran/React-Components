@@ -9,6 +9,7 @@ const InfiniteScroll = lazy(() => import('../Pages/InfiniteScroll'));
 const Search = lazy(() => import('../Pages/Search'));
 const Accordian = lazy(() => import('../Pages/Accordian'));
 const Rating = lazy(() => import('../Pages/Rating'));
+const FileDownloader = lazy(() => import('../Pages/FileDownloader'));
 
 export const RouteInfo = [
     {
@@ -55,6 +56,11 @@ export const RouteInfo = [
         id: 9,
         component: Rating,
         path: '/rating'
+    },
+    {
+        id: 10,
+        component: FileDownloader,
+        path: '/fileDownloader'
     }
 ];
 

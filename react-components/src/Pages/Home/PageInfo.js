@@ -39,5 +39,10 @@ export const PageInfo = [
         id: 7,
         PageName: 'Star Rating',
         url: '/rating'
+    },
+    {
+        id: 8,
+        PageName: 'File Downloader',
+        url: '/fileDownloader'
     }
 ]

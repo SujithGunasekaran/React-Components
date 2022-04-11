@@ -1,0 +1,37 @@
+.file_download_page_main {
+    margin: 35px 0px;
+    padding: 0px 20px;
+}
+
+.file_download_page_container {
+    margin: 10px 0px;
+}
+
+.file_download_page_item {
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid var(--card-border-dark);
+}
+
+.file_download_page_img {
+    width: 100%;
+}
+
+.file_download_page_btn {
+    display: flex;
+    margin: 25px auto 0px auto;
+    padding: 7px 15px;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    color: var(--button-info-text);
+    border: 1px solid var(--button-info-border);
+    transition: 0.4s all ease-in-out;
+}
+
+.file_download_page_btn:hover {
+    cursor: pointer;
+    color: var(--text-white-one);
+    background-color: var(--button-info-bg);
+}
