@@ -1,0 +1,31 @@
+.star_page_container {
+    margin: 35px 0px;
+    text-align: center;
+}
+
+.star_rating_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.star_page_icon {
+    width: 25px;
+    height: 25px;
+    color: var(--text-white-two);
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+}
+
+.star_page_icon.active {
+    color: var(--rating-bg);
+    transition: 0.4s all ease-in-out;
+}
+
+.star_rating_text {
+    padding: 25px 0px;
+    font-size: .950rem;
+    color: var(--text-white-one);
+    font-family: var(--font-open-sans);
+}
