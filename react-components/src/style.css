@@ -19,9 +19,16 @@
     --text-white-four: rgb(88, 88, 88);
     --text-white-five: rgb(63, 62, 62);
     --text-highlight: #1F6FEB;
+    --text-success: #28a745;
+    --text-danger: #dc3545;
 
     --border-light: #30363d;
     --rating-bg: #ffe234;
+
+    --progress-bar-highlight: #1F6FEB;
+    --progress-bar-light: #161B22;
+    --progress-success-bg: #28a745;
+    --progress-danger-bg: #dc3545;
 
     --danger-color: #dc3545;
     --success-color: #28a745;

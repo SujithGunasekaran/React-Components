@@ -1,7 +1,8 @@
-import React, { Fragment, lazy, Suspense } from 'react';
+import React, { Fragment, lazy, Suspense, useState } from 'react';
 import './style.css';
 
 const PageNavigation = lazy(() => import('../../Components/PageNavigation'));
+const DownloadItem = lazy(() => import('../../Components/FileDownloader/DowloadItem'));
 
 const images = [
     {
@@ -35,6 +36,26 @@ const images = [
 
 const FileDownloader = () => {
 
+    // State
+    const [fileList, setFileList] = useState([]);
+
+    const handleFileSelect = (fileInfo) => {
+        setFileList(prevList => {
+            let fileList = [
+                ...prevList,
+                fileInfo
+            ];
+            return fileList;
+        })
+    }
+
+    const removeFileFromList = (fileInfo) => {
+        setFileList(prevList => {
+            let fileList = prevList.filter(info => info.id !== fileInfo.id);
+            return fileList;
+        })
+    }
+
     return (
         <Fragment>
             <Suspense fallback={<div>Loading...</div>}>
@@ -53,7 +74,7 @@ const FileDownloader = () => {
                                         images.map((imageInfo) => (
                                             <div key={imageInfo.id} className='col-md-4 file_download_page_item'>
                                                 <img src={imageInfo.thumb} className='file_download_page_img' loading='lazy' alt={imageInfo.thumb} />
-                                                <button className='file_download_page_btn'>Download</button>
+                                                <button onClick={() => handleFileSelect(imageInfo)} className='file_download_page_btn'>Download</button>
                                             </div>
                                         ))
                                     }
@@ -61,6 +82,20 @@ const FileDownloader = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='file_download_list_container'>
+                    {
+                        fileList.length > 0 &&
+                        fileList.map((fileInfo) => (
+                            <Suspense key={fileInfo.id} fallback={<div>Loading...</div>}>
+                                <DownloadItem
+                                    fileInfo={fileInfo}
+                                    removeFileFromList={removeFileFromList}
+                                />
+                            </Suspense>
+                        ))
+                    }
+
                 </div>
             </div>
         </Fragment>

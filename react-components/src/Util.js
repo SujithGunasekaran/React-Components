@@ -16,3 +16,5 @@ export const isFormValidCheck = (keyList, formData) => {
     }
     return keyMissingList;
 }
+
+export const formatBytes = (bytes) => `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
