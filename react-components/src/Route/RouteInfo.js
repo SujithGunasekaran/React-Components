@@ -10,6 +10,7 @@ const Search = lazy(() => import('../Pages/Search'));
 const Accordian = lazy(() => import('../Pages/Accordian'));
 const Rating = lazy(() => import('../Pages/Rating'));
 const FileDownloader = lazy(() => import('../Pages/FileDownloader'));
+const Comments = lazy(() => import('../Pages/Comments'));
 
 export const RouteInfo = [
     {
@@ -61,6 +62,11 @@ export const RouteInfo = [
         id: 10,
         component: FileDownloader,
         path: '/fileDownloader'
+    },
+    {
+        id: 11,
+        component: Comments,
+        path: '/comments'
     }
 ];
 

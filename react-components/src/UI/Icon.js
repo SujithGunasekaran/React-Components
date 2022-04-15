@@ -92,6 +92,11 @@ export const AddIcon = ({ cssClass }) => (
     </svg>
 )
 
+export const dashIcon = ({ cssClass }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className={`bi bi-dash ${cssClass}`} viewBox="0 0 16 16">
+        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+    </svg>
+)
 
 export const DownArrowIcon = ({ cssClass }) => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className={`bi bi-chevron-down ${cssClass}`} viewBox="0 0 16 16">

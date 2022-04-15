@@ -44,5 +44,10 @@ export const PageInfo = [
         id: 8,
         PageName: 'File Downloader',
         url: '/fileDownloader'
+    },
+    {
+        id: 9,
+        PageName: 'Comments',
+        url: '/comments'
     }
 ]
