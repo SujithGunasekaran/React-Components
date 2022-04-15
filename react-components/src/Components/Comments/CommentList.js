@@ -40,8 +40,8 @@ const CommentList = (props) => {
         <Fragment>
             {
                 comments.length > 0 &&
-                comments.map((commentInfo, index) => {
-                    return constructCommentList(commentInfo, index, 0);
+                comments.map((commentInfo) => {
+                    return constructCommentList(commentInfo);
                 })
             }
         </Fragment>
