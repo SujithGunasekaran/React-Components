@@ -11,7 +11,7 @@ const Comments = () => {
     const [commentCount, setCommentCount] = useState(0);
     const [comments, setComments] = useState([]);
 
-    const insterNestedComments = (index, arr, comment, input, parentData) => {
+    const insertNestedComments = (index, arr, comment, input, parentData) => {
         for (let i = index; i < arr.length; i++) {
             if (arr[i] === '') {
                 comment[parentData.index].replies = [
@@ -24,7 +24,7 @@ const Comments = () => {
                 ];
                 return;
             }
-            return insterNestedComments(i + 1, arr, comment[arr[i]].replies, input, parentData);
+            return insertNestedComments(i + 1, arr, comment[arr[i]].replies, input, parentData);
         }
     }
 
@@ -60,7 +60,7 @@ const Comments = () => {
                 let parentArr = parentData.parent.split('-');
                 setComments(prevComments => {
                     let comments = prevComments.slice();
-                    insterNestedComments(0, parentArr, comments, input, parentData);
+                    insertNestedComments(0, parentArr, comments, input, parentData);
                     return comments;
                 })
             }
