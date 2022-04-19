@@ -1,0 +1,8 @@
+.button_main {
+    margin: 25px 0px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}

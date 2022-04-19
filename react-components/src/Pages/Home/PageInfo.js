@@ -49,5 +49,10 @@ export const PageInfo = [
         id: 9,
         PageName: 'Comments',
         url: '/comments'
+    },
+    {
+        id: 10,
+        PageName: 'Buttons',
+        url: '/button'
     }
 ]

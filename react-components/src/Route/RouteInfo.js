@@ -11,6 +11,7 @@ const Accordian = lazy(() => import('../Pages/Accordian'));
 const Rating = lazy(() => import('../Pages/Rating'));
 const FileDownloader = lazy(() => import('../Pages/FileDownloader'));
 const Comments = lazy(() => import('../Pages/Comments'));
+const Buttons = lazy(() => import('../Pages/Buttons'));
 
 export const RouteInfo = [
     {
@@ -67,6 +68,11 @@ export const RouteInfo = [
         id: 11,
         component: Comments,
         path: '/comments'
+    },
+    {
+        id: 12,
+        component: Buttons,
+        path: '/button'
     }
 ];
 
