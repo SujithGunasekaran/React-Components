@@ -12,8 +12,8 @@ const ButtonComponent = () => {
         <Fragment>
             <Suspense fallback={<div>Loading...</div>}>
                 <PageNavigation
-                    pageName='File Downloader'
-                    githubUrl='FileDownloader'
+                    pageName='Button'
+                    githubUrl='Buttons'
                 />
             </Suspense>
             <div className='button_main'>
