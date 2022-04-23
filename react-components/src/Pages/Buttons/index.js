@@ -1,5 +1,5 @@
 import React, { Fragment, lazy, Suspense } from 'react';
-import Button from 'react_mu_button'; // my own library built for testing purpose.
+import { Button } from 'react_dev_library';
 import './style.css';
 
 const PageNavigation = lazy(() => import('../../Components/PageNavigation'));
@@ -17,22 +17,30 @@ const ButtonComponent = () => {
             </Suspense>
             <div className='button_main'>
                 <Button
-                    color="primary"
+                    mode="primary"
                     variant="outlined"
                 >Outlined Button</Button>
                 <Button
-                    color="success"
+                    mode="success"
                     variant="fill"
                 >Success Button</Button>
                 <Button
-                    color="danger"
+                    mode="danger"
                     variant="fill"
+                    onClick={() => console.log("Hello")}
                 >Danger Button</Button>
                 <Button
-                    color="danger"
+                    mode="danger"
                     variant="fill"
                     disabled={true}
                 >Disabled Button</Button>
+                <Button
+                    variant="fill"
+                    shape="sharp"
+                >sharp Button</Button>
+                <Button
+                    className='footer_btn'
+                >Custom Button</Button>
             </div>
         </Fragment>
     )

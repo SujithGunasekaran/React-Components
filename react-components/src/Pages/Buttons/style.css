@@ -6,3 +6,16 @@
     gap: 15px;
     flex-wrap: wrap;
 }
+
+.footer_btn {
+    border: none;
+    outline: none;
+    font-size: .810rem;
+    padding: 7px 15px;
+    font-weight: 600;
+    background-color: var(--button-cancel-bg);
+    color: var(--text-white-three);
+    cursor: pointer;
+    font-family: var(--font-open-sans);
+    transition: 0.4s all ease-in-out;
+}
