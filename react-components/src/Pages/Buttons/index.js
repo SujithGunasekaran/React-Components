@@ -1,5 +1,6 @@
 import React, { Fragment, lazy, Suspense } from 'react';
 import { Button } from 'react_dev_library';
+import { CancelIcon, CircleCheck } from '../../UI/Icon';
 import './style.css';
 
 const PageNavigation = lazy(() => import('../../Components/PageNavigation'));
@@ -41,6 +42,23 @@ const ButtonComponent = () => {
                 <Button
                     className='footer_btn'
                 >Custom Button</Button>
+                <Button
+                    className='footer_btn'
+                >
+                    <CancelIcon
+                        cssClass={'footer_btn_icon'}
+                    />
+                    Labled Icon
+                </Button>
+                <Button
+                    variant='outlined'
+                    mode='success'
+                >
+                    Promoted
+                    <CircleCheck
+                        cssClass={'footer_btn_icon'}
+                    />
+                </Button>
             </div>
         </Fragment>
     )

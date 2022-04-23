@@ -10,12 +10,21 @@
 .footer_btn {
     border: none;
     outline: none;
-    font-size: .810rem;
-    padding: 7px 15px;
-    font-weight: 600;
-    background-color: var(--button-cancel-bg);
-    color: var(--text-white-three);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: .9rem;
+    padding: 10px 15px;
+    font-weight: 500;
+    background-color: var(--button-info-bg);
+    color: var(--text-white-one);
     cursor: pointer;
     font-family: var(--font-open-sans);
     transition: 0.4s all ease-in-out;
+}
+
+
+.footer_btn_icon {
+    width: 15px;
+    height: 15px;
 }
