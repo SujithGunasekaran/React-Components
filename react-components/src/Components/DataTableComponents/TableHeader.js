@@ -19,6 +19,7 @@ const TableHeader = (props) => {
                     totalLength={totalLength}
                     itemPerPage={itemPerPage}
                     selectedPage={handleNextPage}
+                    theme='dark'
                     numberListPerSet={10}
                 />
                 <div className='data_table_header_pagination_search'>
